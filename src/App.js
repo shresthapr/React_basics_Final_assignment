@@ -3,15 +3,17 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './component/Header/Header';
 import Navigator from './component/Header/Navigator';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
 
     <>
-      <Header />
+      <Router>
+        <Header />
 
 
-      <h1> Student Finder</h1>
+      </Router>
     </>
 
   );

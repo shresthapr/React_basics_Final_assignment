@@ -5,6 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
+import { Link } from "react-router-dom";
 
 export default class Navigator extends Component {
   render() {
@@ -16,8 +17,9 @@ export default class Navigator extends Component {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link to="/">Home</Nav.Link>
-              <Nav.Link href="#link">Students Lists</Nav.Link>
-              <Nav.Link href="#link">Join Us</Nav.Link>
+              <Nav.Link to="/lists">Students Lists</Nav.Link>
+              <Nav.Link to="/joinus">Join Us</Nav.Link>
+              <Nav.Link to="/leave">Leave Team</Nav.Link>
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">News</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Updates</NavDropdown.Item>

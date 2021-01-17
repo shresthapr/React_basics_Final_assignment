@@ -51,3 +51,16 @@
 }
 
 /*---Header ends --*/
+
+.alert-heading.h4{
+  font-size: 0.4rem;
+text-align: center ;
+color: red;
+  
+}
+.alert, p {
+  font-size: 0.3rem;
+text-align: center;
+color: red;
+  
+}
