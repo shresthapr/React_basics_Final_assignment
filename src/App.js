@@ -3,7 +3,8 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './component/Header/Header';
 import Navigator from './component/Header/Navigator';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
 
 function App() {
   return (
@@ -11,7 +12,6 @@ function App() {
     <>
       <Router>
         <Header />
-
 
       </Router>
     </>
