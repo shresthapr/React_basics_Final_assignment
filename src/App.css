@@ -72,3 +72,17 @@ color: red;
 }
 
 /*---Footer----*/
+.footer-wrapper{
+  position: relative;
+  margin-top: 3rem;
+  background-color:black;
+  border-radius: 5px;
+  color: white;
+}
+.inner-wrapper{
+  padding: 2rem;
+}
+h6{
+text-align: center;
+padding: 2rem;
+}
