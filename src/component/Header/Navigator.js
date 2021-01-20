@@ -12,7 +12,7 @@ export default class Navigator extends Component {
     return (
       <div>
         <Navbar bg="dark" variant="dark">
-          <Navbar.Brand href="#home">Helsinki Business College</Navbar.Brand>
+          <Navbar.Brand href="/hbc-college">Helsinki Business College</Navbar.Brand>
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/lists">Students List</Nav.Link>
