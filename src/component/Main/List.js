@@ -14,11 +14,13 @@ const List = () => {
 
 
   return (
-    <div>
+
+
+    <div className="cards-list">
       {result.map((item) => (
         <div className="listCards" key={item.id}>
           <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={item.image} />
+            <Card.Img variant="top" src={item.img} />
             <Card.Body>
               <Card.Title>{item.name}</Card.Title>
               <Card.Text>

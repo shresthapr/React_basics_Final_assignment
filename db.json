@@ -53,7 +53,7 @@
       "name": "Mandy",
       "group": "React19T",
       "desc": "Quisque ut libero porttitor, aliquam felis ac, molestie arcu. Pellentesque sit amet tortor efficitur tellus pharetra ultrices. Quisque quis pretium massa. Duis consectetur porttitor pellentesque.",
-      "img": "https://source.unsplash.com/1600x900/?nature",
+      "img": "https://source.unsplash.com/1600x900/?stones",
       "link": "www.frankie.com"
     },
     {
@@ -61,7 +61,39 @@
       "name": "Andy",
       "group": "React18V",
       "desc": "Quisque malesuada felis quam, eget egestas nisi pharetra sed. Quisque vulputate mauris placerat eros finibus rhoncus malesuada in tellus. Ut accumsan risus quam, in fermentum lectus suscipit non. Phasellus in semper nisl.",
-      "img": "https://source.unsplash.com/1600x900/?mountain",
+      "img": "https://source.unsplash.com/1600x900/?sun",
+      "link": "www.holly.com"
+    },
+    {
+      "id": 9,
+      "name": "Clare",
+      "group": "React20S",
+      "desc": "Morbi sed aliquet nisi, in efficitur risus. Donec porttitor facilisis pulvinar. Maecenas porta eros eget dui ultrices sollicitudin. Vestibulum suscipit, libero eu vehicula cursus, metus ante vestibulum nisi, sed sollicitudin nisl ex ac arcu. ",
+      "img": "https://source.unsplash.com/1600x900/?moon",
+      "link": "www.hery.com"
+    },
+    {
+      "id": 10,
+      "name": "Jammy",
+      "group": "React20K",
+      "desc": "Morbi non venenatis diam. Praesent ante diam, efficitur sit amet dui at, ultrices venenatis ex. Mauris tristique, nunc eu volutpat pulvinar, magna neque tempor quam, vel sodales dolor risus at massa.",
+      "img": "https://source.unsplash.com/1600x900/?trail",
+      "link": "www.david.com"
+    },
+    {
+      "id": 11,
+      "name": "Erin",
+      "group": "React19T",
+      "desc": "Quisque ut libero porttitor, aliquam felis ac, molestie arcu. Pellentesque sit amet tortor efficitur tellus pharetra ultrices. Quisque quis pretium massa. Duis consectetur porttitor pellentesque.",
+      "img": "https://source.unsplash.com/1600x900/?park",
+      "link": "www.frankie.com"
+    },
+    {
+      "id": 12,
+      "name": "Mitch",
+      "group": "React18V",
+      "desc": "Quisque malesuada felis quam, eget egestas nisi pharetra sed. Quisque vulputate mauris placerat eros finibus rhoncus malesuada in tellus. Ut accumsan risus quam, in fermentum lectus suscipit non. Phasellus in semper nisl.",
+      "img": "https://source.unsplash.com/1600x900/?hills",
       "link": "www.holly.com"
     }
   ]
