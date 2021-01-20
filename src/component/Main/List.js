@@ -14,8 +14,6 @@ const List = () => {
 
 
   return (
-
-
     <div className="cards-list">
       {result.map((item) => (
         <div className="listCards" key={item.id}>

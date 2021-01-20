@@ -14,7 +14,7 @@ function App() {
     <>
       <Router>
         <Header />
-        <Tapp />
+
         <Main />
         <Footer />
       </Router>
