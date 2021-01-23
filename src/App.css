@@ -86,3 +86,9 @@ h6{
 text-align: center;
 padding: 2rem;
 }
+
+/* ---Join Module---*/
+.joinheading{
+  font-family: cursive;
+text-align: center;
+}
