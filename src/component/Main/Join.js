@@ -15,6 +15,7 @@ const Join = () => {
     img: '',
     link: ''
   })
+  const [message, setMessage] = useState("")
   useEffect(() => {
     axios.get(API).then((response) => setPosts(response.data));
   }, []);
@@ -27,10 +28,16 @@ const Join = () => {
   }
   const addPostHandler = (e) => {
     e.preventDefault();
-    axios.post(API, post).then(() => {
-      return axios.get(API)
-    }).then((response) => setPosts(response.data))
+    axios.post(API, post).then((res) => {
+      if (res) {
+        console.log(res);
+        return messagehandler(res.id);
+      }
+    })
+  }
 
+  const messagehandler = (id) => {
+    setMessage(`Your Information with ID ${id} has been successfully added`)
   }
 
 
@@ -43,8 +50,9 @@ const Join = () => {
         <input type="text" name="desc" placeholder="description" onChange={changeHandler} />
         <input type="text" name="img" placeholder="image" onChange={changeHandler} />
         <input type="text" name="link" placeholder="link" onChange={changeHandler} />
-        <Button variant="success" type="submit">Post</Button>{' '}
+        <Button variant="success" type="submit" onClick={messagehandler}>Post</Button>
       </form>
+      <div className="messagearea">Look for :{message}</div>
     </div>
   )
 }

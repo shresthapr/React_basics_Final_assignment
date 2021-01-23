@@ -3,29 +3,21 @@ import Carousel from 'react-bootstrap/Carousel';
 import Spinner from 'react-bootstrap/Spinner';
 import axios from 'axios';
 
-const API = "http://localhost:3001/posts'"
+const API = "http://localhost:3001/posts"
 class Home extends Component {
   state = {
-    studentInfo: [],
-    name: '',
-    image: '',
-    description: '',
-    alt: '',
+    studentdata: [],
+
     isLoading: false
   }
-  componentDidMounf() {
+  componentDidMount() {
     this.setState({ isLoading: true });
-    axios.get(API, {
-      params: { _limit: 10, },
-    }).then((res) => this.setState({
-      studentInfo: res.data,
-      name: res.name,
-      img: res.img,
-      desc: res.desc,
-      alt: res.group,
-      isLoading: false
-    }))
-    console.log(this.state.studentInfo)
+    axios.get(API, { params: { _limit: 4, }, }).then((res) =>
+      this.setState({
+        studentdata: res.data,
+        isLoading: false
+      })
+    )
   }
   render() {
     if (this.state.isLoading) {
@@ -35,12 +27,13 @@ class Home extends Component {
     }
     return (
       <div>
-        {this.state.studentInfo.map((item) => (
-          <Carousel>
+        {/* {this.state.studentdata.map((item) =>
+          <Carousel key={item.id}>
             <Carousel.Item>
+              <h1>See this> </h1>
               <img
                 className="d-block w-100"
-                src={item.image}
+                src={item.img}
                 alt={item.alt}
               />
               <Carousel.Caption>
@@ -49,9 +42,10 @@ class Home extends Component {
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
-        ))}
+        )
+        } */}
 
-        {/* <Carousel>
+        <Carousel>
           <Carousel.Item>
             <img
               className="d-block w-100"
@@ -66,7 +60,7 @@ class Home extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="holder.js/800x400?text=Second slide&bg=282c34"
+              src="https://source.unsplash.com/1600x900/?mountains"
               alt="Third slide"
             />
 
@@ -78,7 +72,7 @@ class Home extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="holder.js/800x400?text=Third slide&bg=20232a"
+              src="https://source.unsplash.com/1600x900/?oasis"
               alt="Third slide"
             />
 
@@ -87,7 +81,18 @@ class Home extends Component {
               <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
             </Carousel.Caption>
           </Carousel.Item>
-        </Carousel> */}
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://source.unsplash.com/1600x900/?ocean"
+              alt="Third slide"
+            />
+            <Carousel.Caption>
+              <h3>Fourth slide label</h3>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
       </div>
     );
   }
