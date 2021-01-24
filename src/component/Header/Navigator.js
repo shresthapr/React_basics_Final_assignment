@@ -11,7 +11,7 @@ export default class Navigator extends Component {
     return (
       <div>
         <Navbar bg="dark" variant="dark">
-          <Navbar.Brand href="/hbc-college">
+          <Navbar.Brand href="https://www.bc.fi/">
             Helsinki Business College
           </Navbar.Brand>
           <Nav className="mr-auto">

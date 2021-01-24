@@ -1,29 +1,31 @@
-import React, { Component } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-import Spinner from 'react-bootstrap/Spinner';
-import axios from 'axios';
+import React, { Component } from "react";
+import Carousel from "react-bootstrap/Carousel";
+import Spinner from "react-bootstrap/Spinner";
+import axios from "axios";
 
-const API = "http://localhost:3001/posts"
+const API = "http://localhost:3001/posts";
 class Home extends Component {
   state = {
     studentdata: [],
 
-    isLoading: false
-  }
+    isLoading: false,
+  };
   componentDidMount() {
     this.setState({ isLoading: true });
-    axios.get(API, { params: { _limit: 4, }, }).then((res) =>
+    axios.get(API, { params: { _limit: 4 } }).then((res) =>
       this.setState({
         studentdata: res.data,
-        isLoading: false
+        isLoading: false,
       })
-    )
+    );
   }
   render() {
     if (this.state.isLoading) {
-      return <Spinner animation="border" role="status">
-        <span className="sr-only">Loading...</span>
-      </Spinner>
+      return (
+        <Spinner animation="border" role="status">
+          <span className="sr-only">Loading...</span>
+        </Spinner>
+      );
     }
     return (
       <div>
@@ -53,8 +55,8 @@ class Home extends Component {
               alt="First slide"
             />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3>First student card</h3>
+              <p>Student's Info with description.</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -78,7 +80,9 @@ class Home extends Component {
 
             <Carousel.Caption>
               <h3>Third slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -89,7 +93,9 @@ class Home extends Component {
             />
             <Carousel.Caption>
               <h3>Fourth slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
