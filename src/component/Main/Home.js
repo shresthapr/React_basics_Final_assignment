@@ -7,7 +7,6 @@ const API = "http://localhost:3001/posts";
 class Home extends Component {
   state = {
     studentdata: [],
-
     isLoading: false,
   };
   componentDidMount() {
@@ -20,13 +19,13 @@ class Home extends Component {
     );
   }
   render() {
-    if (this.state.isLoading) {
-      return (
-        <Spinner animation="border" role="status">
-          <span className="sr-only">Loading...</span>
-        </Spinner>
-      );
-    }
+    // if (this.state.isLoading) {
+    //   return (
+    //     <Spinner animation="border" role="status">
+    //       <span className="sr-only">Loading...</span>
+    //     </Spinner>
+    //   );
+    // }
     return (
       <div>
         {/* {this.state.studentdata.map((item) =>
