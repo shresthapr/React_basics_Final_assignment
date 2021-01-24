@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
 import Card from "react-bootstrap/Card";
@@ -16,7 +16,7 @@ const Join = () => {
     img: "",
     link: "",
   });
-  const [mess, setMess] = useState("");
+
   const changeHandler = (e) => {
     setPost({
       ...post,

@@ -38,57 +38,48 @@
 }
 
 /* ----Header Styling ---*/
-.HeaderWrapper {
-
-
-}
-.Mainhead{
-
-}
-
-.SubHead{
-
-}
 
 /*---Header ends --*/
 
-.alert-heading.h4{
+.alert-heading.h4 {
   font-size: 0.4rem;
-text-align: center ;
-color: red;
-  
+  text-align: center;
+  color: red;
 }
-.alert, p {
-  font-size: 0.3rem;
-text-align: center;
-color: red;
-  
+.alert {
+  margin-bottom: 0;
+}
+.alert,
+p {
+  font-size: 0.4rem;
+  text-align: center;
+  color: red;
 }
 
-.cards-list{
+.cards-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
 }
 
 /*---Footer----*/
-.footer-wrapper{
+.footer-wrapper {
   position: relative;
   margin-top: 3rem;
-  background-color:black;
+  background-color: black;
   border-radius: 5px;
   color: white;
 }
-.inner-wrapper{
+.inner-wrapper {
   padding: 2rem;
 }
-h6{
-text-align: center;
-padding: 2rem;
+h6 {
+  text-align: center;
+  padding: 2rem;
 }
 
 /* ---Join Module---*/
-.joinheading{
+.joinheading {
   font-family: cursive;
-text-align: center;
+  text-align: center;
 }

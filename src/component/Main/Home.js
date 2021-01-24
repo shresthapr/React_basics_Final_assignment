@@ -51,7 +51,7 @@ class Home extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://source.unsplash.com/1600x900/?hills"
+              src="https://source.unsplash.com/600x900/?hills"
               alt="First slide"
             />
             <Carousel.Caption>
@@ -62,7 +62,7 @@ class Home extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://source.unsplash.com/1600x900/?mountains"
+              src="https://source.unsplash.com/600x900/?mountains"
               alt="Third slide"
             />
 

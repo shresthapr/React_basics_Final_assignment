@@ -4,7 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 
 export default class Navigator extends Component {
   render() {

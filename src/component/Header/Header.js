@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Navigator from "./Navigator";
-import Alert from "react-bootstrap/Alert";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import Alertlabel from "./Alertlabel";
 
 const Header = () => {
+  const [toggle, setToggle] = useState(true);
+
+  const showhide = () => {
+    setToggle(false);
+  };
   return (
     <>
       <div className="HeaderWrapper">
@@ -11,14 +15,7 @@ const Header = () => {
           <Navigator />
         </div>
         <div className="Mainhead">
-          <Alert variant="warning">
-            <Alert.Heading>Covid-19 Alert!!!!</Alert.Heading>
-            <p>
-              {" "}
-              Maintain safe social distancing. Maintain good hand hygiene. Reach
-              our Helpline +358 111222333
-            </p>
-          </Alert>
+          {toggle && <Alertlabel display={showhide} />}
         </div>
       </div>
     </>

@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 const SingleUser = ({ image, name, group, desc, link }) => {
   return (
     <>
-      <Card style={{ width: "18rem" }}>
+      <Card style={{ width: "18rem", margin: "0 auto" }}>
         <Card.Img variant="top" src={image} />
         <Card.Body>
           <Card.Title>{name}</Card.Title>

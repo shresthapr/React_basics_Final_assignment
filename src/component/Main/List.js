@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Card from "react-bootstrap/Card";
