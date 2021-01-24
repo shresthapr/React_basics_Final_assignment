@@ -51,7 +51,7 @@ class Home extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://source.unsplash.com/600x900/?hills"
+              src="https://source.unsplash.com/600x400/?hills"
               alt="First slide"
             />
             <Carousel.Caption>
@@ -62,7 +62,7 @@ class Home extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://source.unsplash.com/600x900/?mountains"
+              src="https://source.unsplash.com/600x400/?mountains"
               alt="Third slide"
             />
 
@@ -74,7 +74,7 @@ class Home extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://source.unsplash.com/1600x900/?oasis"
+              src="https://source.unsplash.com/600x400/?oasis"
               alt="Third slide"
             />
 
@@ -88,7 +88,7 @@ class Home extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://source.unsplash.com/1600x900/?ocean"
+              src="https://source.unsplash.com/600x400/?ocean"
               alt="Third slide"
             />
             <Carousel.Caption>

@@ -25,10 +25,13 @@ const Join = () => {
   };
   const addPostHandler = (e) => {
     e.preventDefault();
-    axios.post(API, post).then(
-      alert(`Your Information with ID 
+    axios
+      .post(API, post)
+      .then(
+        alert(`Your Information with ID 
     ${post.id}has been successfully added`)
-    );
+      )
+      .then(window.location.reload());
   };
 
   return (
