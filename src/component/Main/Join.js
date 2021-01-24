@@ -5,11 +5,9 @@ import axios from "axios";
 import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
-import Dummy from "./dummy";
 
 const API = "http://localhost:3001/posts";
 const Join = () => {
-  const [posts, setPosts] = useState([]);
   const [post, setPost] = useState({
     id: "",
     name: "",
@@ -18,12 +16,7 @@ const Join = () => {
     img: "",
     link: "",
   });
-
-  const [message, setMessage] = useState("");
-  useEffect(() => {
-    axios.get(API).then((response) => setPosts(response.data));
-  }, []);
-
+  const [mess, setMess] = useState("");
   const changeHandler = (e) => {
     setPost({
       ...post,

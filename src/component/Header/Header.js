@@ -1,11 +1,7 @@
-import React from 'react';
-import Navigator from './Navigator';
-import Alert from 'react-bootstrap/Alert';
+import React from "react";
+import Navigator from "./Navigator";
+import Alert from "react-bootstrap/Alert";
 import { BrowserRouter, Route, Link } from "react-router-dom";
-
-
-
-
 
 const Header = () => {
   return (
@@ -17,12 +13,16 @@ const Header = () => {
         <div className="Mainhead">
           <Alert variant="warning">
             <Alert.Heading>Covid-19 Alert!!!!</Alert.Heading>
-            <p>  Maintain safe social distancing. Maintain good hand hygiene. Reach our Helpline +358 111222333</p>
+            <p>
+              {" "}
+              Maintain safe social distancing. Maintain good hand hygiene. Reach
+              our Helpline +358 111222333
+            </p>
           </Alert>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
